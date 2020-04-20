@@ -1,0 +1,41 @@
+body{
+	flex-direction: column;
+	background-color: #EEEEEE;
+	justify-content: center;
+}
+*{
+	font-family: roboto;
+	font-size: 26px;
+}
+
+h1{
+	text-align: center;
+}
+
+p {
+	margin: 20px auto !important;
+	font-size: 20px;
+}
+div{
+	text-align: center;
+
+}
+label{
+	text-align: center;
+	flex-direction: column;
+}
+.main{
+	width: 70%;
+}
+#email-label{
+	margin: 10px;
+}
+#nam-label{
+	margin: 10px;
+}
+#number-label{
+	margin: 10px;
+}
+#cant-peoples{
+	margin: 10px;
+}
