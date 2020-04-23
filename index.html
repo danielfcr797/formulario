@@ -3,39 +3,41 @@
 <head>
 	<title id="title">formulario</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="https://fonts.google.com/specimen/Roboto">
 	<meta charset="utf-8">
 
 </head>
 <body>
-	<main class="main">
+	<main class="main" id="thumbnail">
 	<div class="div-formulario">
 		<h1>formulario para ayudas alimenticias</h1>
 		<p id="descripcion">debido a la cituacion de salud publica que se esta presentando por el tema del coronavirus se le pide a la poblacion que realice el siguiente formulario para poder contribuir adecuadamente a la poblacion mas necesitada</p>
 	</div>
+	<hr>
 	<form id="survey_form">
 		<div class="div-formulario">
 			<label for="nam-label">ingrese su nombre completo</label>
-			<br></br>
+			
 			<input id="nam-label" type="text" name="" placeholder="escribe tu nombre" required="">
 		</div>
 		<div class="div-formulario">
 			<label for="email-label">ingrese su correo electronico</label>
-			<br></br>
+			
 			<input id="email-label" type="email" name="" placeholder="coreo electronico">
 		</div>
 		<div class="div-formulario">
 			<label for="number-label">ingrese su numero de documento</label>
-			<br></br>
+			
 			<input id="number-label"    type="text" name="" size="10" placeholder="numero de documento" required="">
 		</div >
 		<div class="div-formulario">
 			<label for="cant-peoples">¿cuantas personas viven en tu casa, incluyendote</label>
-			<br></br>
+			
 			<input id="cant-peoples" type="number" name="" required="" >
 		</div>
 		<div class="div-formulario">
 		<label id="dropdown">seleccione su estrato</label>
-		<br></br>
+	
 		<select id="estrato" required="">
 			<option value="1">1</option>
 			<option value="2">2</option>
@@ -48,17 +50,22 @@
 		</div>
 		<div class="div-formulario">
 			<label>promedio del salario que gana, seleccione solo una respuesta</label>
-			<br></br>
-			<input type="checkbox" name="">menos de 1 SMLV
-			<br></br>
-			<input type="checkbox" name="">entre 1 y 2 SMLV
-			<br></br>
-			<input type="checkbox" name="">entre 3 y 4 SMLV
-			
 		</div>
-		<br></br>
-		<p> gracias por su informacion, proximamente nos estaremos comunicando con usted</p>
+			<div class="div-formulario">		
+				<input type="checkbox" name="">menos de 1 SMLV
+			
+				<input type="checkbox" name="">entre 1 y 2 SMLV
+			
+				<input type="checkbox" name="">entre 3 y 4 SMLV
+			
+			</div>
+	
 		<div class="div-formulario">
+			<label><strong>Sugerencias</strong></label>
+			<input class="textarea" type="text" name="textarea">
+
+		</div>
+		<div class="div-formulario" id="enviar">
 			<input type="button" name="" value="Enviar">
 		</div>
 	</form>
